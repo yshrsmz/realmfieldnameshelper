@@ -126,7 +126,7 @@ release {
     tagPrefix = 'v'
 }
 buildscript {
-    ext.kotlin_version = '1.0.6'
+    ext.kotlin_version = '1.1.4-3'
     repositories {
         mavenCentral()
     }
