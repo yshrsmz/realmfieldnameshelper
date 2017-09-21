@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
         RealmResults<Person> results4 = realm.where(Person.class)
                 .equalTo(PersonFields.LIBRARY_REF.LIBRARY_FIELD, "Bar")
                 .findAll();
+
+        RealmResults<Person> results5 = realm.where(Person.class)
+                .equalTo(PersonFields.LIBRARY_KOTLIN_REF.LIBRARY_KOTLIN_FIELD, "Bar")
+                .findAll();
     }
 
     @Override

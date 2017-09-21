@@ -1,5 +1,6 @@
 package dk.ilios.example.realmfieldnames;
 
+import dk.ilios.example.library.LibraryKotlinModel;
 import dk.ilios.example.library.LibraryModel;
 import io.realm.RealmList;
 import io.realm.RealmObject;
@@ -14,6 +15,7 @@ public class Person extends RealmObject {
     public RealmList<Dog> dogs;
     public Dog favoriteDog;
     public LibraryModel libraryRef;
+    public LibraryKotlinModel libraryKotlinRef;
 
     @Ignore
     public int random;

@@ -129,7 +129,7 @@ class RealmFieldNamesProcessor : AbstractProcessor() {
         val className = libraryClass.simpleName
         val data = ClassData(packageName, className, libraryClass = true)
 
-        libraryClass.fields.forEach { field ->
+        libraryClass.declaredFields.forEach { field ->
             if (java.lang.reflect.Modifier.isStatic(field.modifiers)) {
                 return@forEach // completely ignore any static fields
             }
