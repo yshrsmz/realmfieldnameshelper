@@ -7,4 +7,5 @@ open class Dog : RealmObject() {
     open var owner: Person? = null
     open var name: String? = null
     open var age: Int = 0
+    open var foo: String = ""
 }

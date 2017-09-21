@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import dk.ilios.example.library.LibraryModule;
+import dk.ilios.example.realmfieldnames.lib.Lib2Module;
 import dk.ilios.realmfieldnames.R;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Realm.init(getApplicationContext());
         RealmConfiguration realmConfig = new RealmConfiguration.Builder()
-                .modules(new AppModule(), new LibraryModule())
+                .modules(new AppModule(), new LibraryModule(), new Lib2Module())
                 .deleteRealmIfMigrationNeeded()
                 .build();
         realm = Realm.getInstance(realmConfig);

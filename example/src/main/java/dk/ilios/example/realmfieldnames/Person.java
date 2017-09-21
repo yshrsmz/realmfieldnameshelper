@@ -1,6 +1,9 @@
 package dk.ilios.example.realmfieldnames;
 
 import dk.ilios.example.library.LibraryModel;
+import dk.ilios.example.library.LibraryModel2;
+import dk.ilios.example.realmfieldnames.lib.Lib2Model;
+import dk.ilios.example.realmfieldnames.lib.Lib2ModelJava;
 import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.Ignore;
@@ -14,6 +17,9 @@ public class Person extends RealmObject {
     public RealmList<Dog> dogs;
     public Dog favoriteDog;
     public LibraryModel libraryRef;
+    public Lib2Model lib2Ref;
+    public LibraryModel2 libraryRef2;
+    public Lib2ModelJava lib2Ref2;
 
     @Ignore
     public int random;
